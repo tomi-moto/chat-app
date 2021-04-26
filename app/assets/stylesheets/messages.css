@@ -1,28 +1,59 @@
+/* 全体 */
 .wrapper {
   display: flex;
   width:100vw;
   height:100vh;
 }
+/* サイドバー */
+/* サイドヘッド */
 
 .side_bar {
   width:300px;
   background-color: #253141;
 }
 
-.main_chat {
-  width:calc(100vw - 300px);
-  background-color: #ffffff;
-}
-
 .side_head {
   height:100px;
   padding:0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name a{
+  padding-left: 20px;
+  color:#fafafa;
+  font-size:16px;
+  text-decoration: none;
 }
 
+.new_chat a{
+  margin-right: 20px;
+  padding:14px;
+  border:1px solid lightblue;
+  font-size: 10px;
+  color:deepskyblue;
+  text-decoration: none;
+}
+/* サイドメイン */
 .side_main {
   height:calc(100vh - 100px);
   background-color: #2f3e51;
   padding:0 20px;
+  overflow: scroll;
+}
+
+.chat_room {
+  padding:20px 0 40px;
+}
+.room_name a{
+  color:white;
+  text-decoration: none;
+}
+
+/* メイン */
+.main_chat {
+  width:calc(100vw - 300px);
+  background-color: #ffffff;
 }
 
 .chat_head {
