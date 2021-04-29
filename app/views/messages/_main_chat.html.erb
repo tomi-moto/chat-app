@@ -9,32 +9,7 @@
 </div>
 <%# チャットメイン %>
 <div class="chat_main">
-  <div class="messages">
-    <div class=name_time>
-      <div class="name">
-        Tom
-      </div>
-      <div class="time">
-        2021/04/26 14:41:39
-      </div>
-    </div>
-    <div class="message">
-      <p>おはよう</p>
-    </div>
-  </div>  
-  <div class="messages">
-    <div class=name_time>
-      <div class="name">
-        Sim
-      </div>
-      <div class="time">
-        2021/04/26 14:45:39
-      </div>
-    </div>
-    <div class="message">
-      <p>おは</p>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <%# チャットフット %>
 
